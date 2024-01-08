@@ -31,6 +31,7 @@ router.post("/", (req, res) => {
   res.send(user);
 });
 
+//delete
 router.delete("/:id", (req, res) => {
   const id = parseInt(req.params.id);
   const check = user.filter((user) => user.id === id);
